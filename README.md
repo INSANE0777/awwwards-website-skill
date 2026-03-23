@@ -9,6 +9,7 @@ This skill is a comprehensive guide based on SOTY/SOTD winner analysis, Codrops 
 ## Features
 
 - **Awwwards Scoring System Alignment**: Design specifically for Design (40%), Usability (30%), Creativity (20%), and Content (10%).
+- **Dual Tech Paths**: Build with The Heavyweights (GSAP/Three.js) or The Purist stack (Zero-dependency Web APIs & Canvas).
 - **Phase-based Workflow**: Structured into Research, Creative Brief, Design System, Interaction Architecture, and more.
 - **31 Aesthetic Archetypes**: Detailed guides for various styles (Archival, Kinetic, Luxury, Experimental, etc.).
 - **Signature Techniques**: Implementation guides for custom cursors, magnetic buttons, text reveals, and paper grain.

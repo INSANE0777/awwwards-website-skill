@@ -418,9 +418,23 @@ Read `references/sound-design.md` for ambient audio and hover/click feedback pat
 
 ---
 
-## PHASE 4 — OUTPUT FORMAT & COMPLETE SITE MANDATE
+## PHASE 4 — OUTPUT FORMAT & TECH PATHS
 
-### 4A — CHOOSE THE RIGHT OUTPUT FORMAT
+### 4A — THE DUAL TECH PATHS (GSAP vs Pure APIs)
+
+Awwwards-level execution can be achieved through two distinct philosophies. Before generating output, determine the right path for the archetype:
+
+**Path A: The Heavyweights (GSAP + Three.js + Lenis)**
+*   **Best for:** Cinematic, Luxury, 3D Immersive, Complex timeline choreography.
+*   **The Stack:** Loads external physics, scroll, and animation engines to handle complex cross-browser easing and 3D scenes.
+
+**Path B: The Purist (Zero-Dependency / Raw Web APIs)**
+*   **Best for:** Kinetic Brutalism, Neo-Brutalist, High-Performance Typography, Raw Tech.
+*   **The Stack:** Uses absolutely ZERO external libraries. Relies on native `requestAnimationFrame`, `IntersectionObserver`, CSS animations, and HTML5 Canvas.
+*   > [!IMPORTANT]
+    > **If the user requests Path B (or a brutalist/raw build), you MUST follow `references/raw-web-apis.md`.**
+
+### 4B — CHOOSE THE RIGHT OUTPUT FORMAT
 
 Never default to HTML. Match the format to the request:
 
@@ -1156,4 +1170,5 @@ The question is not "is this SOTY-worthy?" — it's **"is this the best possible
 | `references/deployment-optimization.md` | **Edge Performance**: Vercel/Netlify, caching, & global delivery |
 | `references/advanced-seo-strategies.md` | **Creative SEO**: Ranking JS-heavy & WebGL-dominant sites |
 | `references/ai-asset-pipelines.md` | **Asset Gen**: Midjourney/Flux prompts for award-level UI |
+| `references/raw-web-apis.md` | **Zero-Dependency**: LERP cursor, Canvas matrix, Pure CSS glitches |
 
