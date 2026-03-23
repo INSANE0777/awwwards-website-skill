@@ -57,5 +57,10 @@ void main() {
 
 ---
 
-## 4. ASSET LOAD BALANCING
-On "Low" quality (likely a slow network), skip the 4K 3D models and load the "LOD1" (Level of Detail) versions immediately.
+## 5. MOBILE MEMORY MANAGEMENT
+In 2026, Safari on iOS is the primary bottleneck.
+- **Dispose Protocol**: Always `geometry.dispose()` and `texture.dispose()` when components unmount.
+- **Tiering Manifesto**:
+  - **Tier 1 (High-end PC):** 4K Textures, 60fps, Full Post-processing.
+  - **Tier 2 (Modern Mobile):** 1K Textures, 30fps (locked), Bloom only.
+  - **Tier 3 (Potato Mode):** 2D fallback, No Post-processing, Reduced Motion.

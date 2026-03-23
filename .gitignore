@@ -1,0 +1,16 @@
+.claude/
+.agents/
+aeon-digital/
+charles-leclerc/
+dont-board-me/
+minimal-portfolio/
+test-site-3d/
+test-site-lusion/
+test-site-panels/
+test-site/
+void-portfolio-without-skill/
+void-studio/
+node_modules/
+dist/
+.env
+.DS_Store

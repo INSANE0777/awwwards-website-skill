@@ -1153,4 +1153,7 @@ The question is not "is this SOTY-worthy?" — it's **"is this the best possible
 | `references/adaptive-quality-scaling.md` | Tiered experience design: Tier 1, 2, 3 fallback logic |
 | `references/immersive-privacy-consent.md` | Turning GDPR/Legal requirements into immersive art |
 | `references/prompting-for-perfection.md` | **The MotionSites Layer**: Architecting elite AI prompts |
+| `references/deployment-optimization.md` | **Edge Performance**: Vercel/Netlify, caching, & global delivery |
+| `references/advanced-seo-strategies.md` | **Creative SEO**: Ranking JS-heavy & WebGL-dominant sites |
+| `references/ai-asset-pipelines.md` | **Asset Gen**: Midjourney/Flux prompts for award-level UI |
 
