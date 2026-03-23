@@ -3,38 +3,21 @@
 
 ---
 
-## 1. SVG NOISE (inline, no external file)
+## 1. CINEMATIC FILM GRAIN (The Awwwards Standard)
 
-```html
-<svg class="noise-svg" aria-hidden="true">
-  <filter id="noise">
-    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-    <feColorMatrix type="saturate" values="0" />
-  </filter>
-  <rect width="100%" height="100%" filter="url(#noise)" />
-</svg>
-```
+**CRITICAL RULE:** Never use static grain. Static grain looks like a dirty monitor. Awwwards-level grain must be animated (typically 3-4 steps) and MUST use `mix-blend-mode: overlay` or `soft-light` to interact physically with the pixels beneath it.
 
 ```css
-.noise-svg {
-  position: fixed; inset: 0; z-index: 9999;
-  pointer-events: none; opacity: 0.04;
-  width: 100%; height: 100%;
-  mix-blend-mode: overlay;
-}
-```
-
----
-
-## 2. CSS-ONLY GRAIN (animated)
-
-```css
-.grain::after {
-  content: ''; position: fixed; inset: -50%;
-  width: 200%; height: 200%;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.035;
-  pointer-events: none; z-index: 9999;
+/* Add this to your main CSS file */
+.noise-overlay {
+  position: fixed;
+  inset: -50%;
+  width: 200vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035; /* Adjust between 0.02 and 0.06 */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   mix-blend-mode: overlay;
   animation: grainMove 0.3s steps(3) infinite;
 }
